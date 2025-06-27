@@ -48,3 +48,22 @@ h4,
   font-weight: 500;
   font-size: clamp(20px, 18.471px + 0.392vw, 26px);
 }
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @include hover {
+    color: var(--color-green-50);
+  }
+}

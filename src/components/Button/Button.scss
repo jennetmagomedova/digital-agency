@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(14px, 12.98px + 0.261vw, 18px);
+  font-weight: 500;
+
+  &--color {
+    &-accent {
+      background-color: var(--color-green-50);
+      color: var(--color-gray-15);
+
+      @include hover {
+        color: var(--color-gray-15);
+        opacity: 0.8;
+      }
+    }
+
+    &-transparent {
+      border: var(--border);
+    }
+  }
+
+  &--border {
+    &-8 {
+      border-radius: 8px;
+
+      @include tablet {
+        border-radius: 6px;
+      }
+    }
+
+    &-10 {
+      border-radius: 10px;
+
+      @include tablet {
+        border-radius: 8px;
+      }
+    }
+  }
+}

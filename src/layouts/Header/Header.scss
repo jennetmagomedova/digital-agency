@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 20px;
+  font-size: 18px;
+
+  @include laptop {
+    font-size: 14px;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    left: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 140px 40px 40px;
+    row-gap: 80px;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 0.4s;
+
+    &.is-active {
+      left: 0;
+    }
+
+    @include tablet-above {
+      display: contents;
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 2px;
+
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 24px;
+      }
+    }
+
+    &-item {
+      padding: clamp(10px, 7.333px + 0.347vw, 14px)
+        clamp(20px, 14.667px + 0.694vw, 28px);
+
+      @include tablet {
+        padding: 0;
+      }
+
+      &.is-active {
+        @include tablet-above {
+          font-weight: 600;
+          color: var(--color-white);
+          background-color: var(--color-gray-15);
+          border-radius: 8px;
+          pointer-events: none;
+        }
+
+        @include laptop {
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding: 16px 24px;
+
+    @include laptop {
+      padding: 14px 18px;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 6px;
+    width: 46px;
+    height: 46px;
+    background-color: var(--color-gray-15);
+    border-radius: 6px;
+    padding: 14px 10px;
+
+    &.is-active {
+      .header__burger-line {
+        &:first-child {
+          rotate: 45deg;
+          transform-origin: 0;
+          translate: 4px -1px;
+        }
+
+        &:nth-child(2) {
+          rotate: -45deg;
+        }
+
+        &:last-child {
+          width: 0;
+        }
+      }
+    }
+
+    &-line {
+      width: 25px;
+      height: 2px;
+      background-color: var(--color-green-50);
+      border-radius: 3px;
+
+      &:last-child {
+        width: 55%;
+        align-self: end;
+      }
+    }
+  }
+}
