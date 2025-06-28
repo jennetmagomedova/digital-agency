@@ -1,0 +1,48 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-gray);
+
+  @include hover {
+    border: var(--border-accent);
+  }
+
+  &--bg {
+    &-gray {
+      background: linear-gradient(
+          229deg,
+          rgba(158, 255, 0, 0.2) -68.25%,
+          rgba(158, 255, 0, 0) 32.16%
+        ),
+        linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    }
+
+    &-green-left {
+      background: linear-gradient(
+        131deg,
+        rgba(158, 255, 0, 0.2) -66.81%,
+        rgba(158, 255, 0, 0) 37.19%
+      );
+    }
+
+    &-green-right {
+      background: linear-gradient(
+          229deg,
+          rgba(158, 255, 0, 0.2) -68.25%,
+          rgba(158, 255, 0, 0) 32.16%
+        ),
+        linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    }
+  }
+
+  &--borderRadius {
+    &-8 {
+      border-radius: var(--border-radius-s);
+    }
+
+    &-10 {
+      border-radius: var(--border-radius-m);
+    }
+  }
+}

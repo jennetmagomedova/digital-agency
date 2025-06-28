@@ -20,6 +20,8 @@
   --color-gray-60: #98989a;
   --color-gray-90: #e6e6e6;
 
+  --color-border-gray: #2e2e2e;
+
   --container-width: clamp(1248px, 91.1vw, 1564px);
   --container-padding-x: 16px;
 
@@ -29,8 +31,10 @@
   --border-radius-s: 8px;
   --border-radius-xs: 6px;
 
+  --border-gray: 1px solid var(--color-border-gray);
   --border-gray-15: 1px solid var(--color-gray-15);
   --border-gray-20: 1px solid var(--color-gray-20);
+  --border-accent: 1px solid var(--color-green-50);
 
   --transition-duration: 0.2s;
 }

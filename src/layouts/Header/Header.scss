@@ -1,17 +1,22 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
   padding-block: 20px;
-  font-size: 18px;
-
-  @include laptop {
-    font-size: 14px;
-  }
+  border-bottom: var(--border-gray-15);
 
   @include tablet {
     padding-top: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    font-size: 18px;
+
+    @include laptop {
+      font-size: 14px;
+    }
   }
 
   &__overlay {
@@ -27,6 +32,7 @@
     width: 100vw;
     height: 100vh;
     transition-duration: 0.4s;
+    background-color: var(--color-gray-10);
 
     &.is-active {
       left: 0;

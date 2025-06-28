@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import "./Button.scss";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { arrowTopRight } from "@/assets/icons";
 
 const Button = (props) => {
   const {
@@ -37,11 +37,7 @@ const Button = (props) => {
       {...specificProps}
       {...extraAttrs}
     >
-      {hasIcon && (
-        <span className="button__icon">
-          <ArrowUpRightIcon width={34} height={34} />
-        </span>
-      )}
+      {hasIcon && <img src={arrowTopRight} aria-label="Visit other page" />}
       {hasLabel && label}
     </Component>
   );

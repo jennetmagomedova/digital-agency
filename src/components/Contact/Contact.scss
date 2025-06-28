@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 16px;
+
+  @include laptop {
+    padding-bottom: 10px;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding-block: 20px;
+  }
+
+  address {
+    font-style: normal;
+  }
+}

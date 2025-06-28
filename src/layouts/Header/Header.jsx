@@ -2,37 +2,11 @@ import Logo from "@/components/Logo";
 import "./Header.scss";
 import classNames from "classnames";
 import Button from "@/components/Button";
+import { menuItems } from "@/constants";
 import { useLocation } from "react-router";
 import { useState } from "react";
 
 const Header = () => {
-  const menuItems = [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Services",
-      href: "/services",
-    },
-    {
-      label: "Work",
-      href: "/work",
-    },
-    {
-      label: "Process",
-      href: "/process",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-    {
-      label: "Careers",
-      href: "/careers",
-    },
-  ];
-
   const [isOpen, setOpen] = useState(false);
 
   const location = useLocation();
@@ -42,46 +16,50 @@ const Header = () => {
   };
 
   return (
-    <header className="header container">
-      <Logo />
-      <div className={classNames("header__overlay", { ["is-active"]: isOpen })}>
-        <nav className="header__menu">
-          <ul className="header__menu-list">
-            {menuItems.map((item) => (
-              <li
-                className={classNames("header__menu-item", {
-                  ["is-active"]: item.href === location.pathname,
-                })}
-                key={`menuItem-${item.label}`}
-              >
-                <a href={item.href} className="header__menu-link">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="header__actions">
-          <Button
-            className="header__button"
-            href="/contacts"
-            target="_blank"
-            mode="accent"
-            borderRadius={8}
-            hasLavel
-            label="Contact us"
-          />
+    <header className="header">
+      <div className="header__inner container">
+        <Logo />
+        <div
+          className={classNames("header__overlay", { ["is-active"]: isOpen })}
+        >
+          <nav className="header__menu">
+            <ul className="header__menu-list">
+              {menuItems.slice(0, menuItems.length - 1).map((item) => (
+                <li
+                  className={classNames("header__menu-item", {
+                    ["is-active"]: item.href === location.pathname,
+                  })}
+                  key={`header--menuItem-${item.label}`}
+                >
+                  <a href={item.href} className="header__menu-link">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="header__actions">
+            <Button
+              className="header__button"
+              href="/contact"
+              target="_blank"
+              mode="accent"
+              borderRadius={8}
+              hasLabel
+              label="Contact Us"
+            />
+          </div>
         </div>
-      </div>
-      <div
-        className={classNames("header__burger", "visible-tablet", {
-          ["is-active"]: isOpen,
-        })}
-        onClick={toggleMenu}
-      >
-        <span className="header__burger-line"></span>
-        <span className="header__burger-line"></span>
-        <span className="header__burger-line"></span>
+        <div
+          className={classNames("header__burger", "visible-tablet", {
+            ["is-active"]: isOpen,
+          })}
+          onClick={toggleMenu}
+        >
+          <span className="header__burger-line"></span>
+          <span className="header__burger-line"></span>
+          <span className="header__burger-line"></span>
+        </div>
       </div>
     </header>
   );

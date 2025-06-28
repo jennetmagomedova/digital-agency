@@ -1,0 +1,40 @@
+.soc1als {
+  padding: clamp(8px, 4px + 0.521vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  border: var(--border-gray-15);
+  border-radius: var(--border-radius-l);
+
+  @include laptop {
+    border-radius: var(--border-radius-s);
+  }
+
+  @include mobile {
+    padding: 16px;
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  &__list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    @include laptop {
+      gap: 10px;
+    }
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+
+    @include laptop {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}

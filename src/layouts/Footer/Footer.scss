@@ -1,0 +1,118 @@
+.footer {
+  border-top: var(--border-gray-15);
+  font-size: 18px;
+  font-weight: 500;
+
+  @include laptop {
+    font-size: 16px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body,
+  &__extra {
+    padding-block: clamp(30px, 24.902px + 1.307vw, 50px);
+  }
+
+  &__body {
+    border-bottom: var(--border-gray-15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      border-bottom: none;
+    }
+  }
+
+  &__menu {
+    @include tablet {
+      padding-inline: 20px;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+
+      @include laptop {
+        gap: 20px;
+      }
+
+      @include tablet {
+        padding-top: 30px;
+        border-top: var(--border-gray-15);
+        justify-content: center;
+      }
+    }
+  }
+
+  &__soc1als {
+    @include mobile-s {
+      width: 100%;
+    }
+  }
+
+  &__extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__contacts {
+    @include mobile {
+      width: 100%;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 30px;
+
+      @include laptop {
+        column-gap: 22px;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &-item {
+      border-bottom: var(--border-gray-15);
+
+      @include mobile {
+        width: 100%;
+      }
+
+      .contact {
+        @include mobile {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    color: var(--color-gray-60);
+  }
+}
