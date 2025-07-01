@@ -2,8 +2,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(14px, 12.98px + 0.261vw, 18px);
+  font-size: 18px;
   font-weight: 500;
+
+  @include laptop {
+    font-size: 14px;
+  }
 
   &--color {
     &-accent {
@@ -17,24 +21,31 @@
     }
 
     &-transparent {
-      border: var(--border);
+      border: var(--border-gray-20);
+      background-color: rgba(36, 36, 36, 0.2);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+
+      @include hover {
+        border-color: var(--border-green-50);
+      }
     }
   }
 
   &--border {
     &-8 {
-      border-radius: 8px;
+      border-radius: var(--border-radius-s);
 
       @include tablet {
-        border-radius: 6px;
+        border-radius: var(--border-radius-xs);
       }
     }
 
     &-10 {
-      border-radius: 10px;
+      border-radius: var(--border-radius-m);
 
-      @include tablet {
-        border-radius: 8px;
+      @include laptop {
+        border-radius: var(--border-radius-s);
       }
     }
   }

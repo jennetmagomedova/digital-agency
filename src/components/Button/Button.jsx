@@ -8,7 +8,7 @@ const Button = (props) => {
     type = "button",
     href,
     target,
-    /** accent, transparent */
+    /** accent, transparent, gray */
     mode,
     hasLabel = true,
     label,

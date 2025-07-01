@@ -73,3 +73,12 @@ export const contacts = [
     type: "address",
   },
 ];
+
+export const companies = [
+  "zapier",
+  "spotify",
+  "zoom",
+  "slack",
+  "amazon",
+  "adobe",
+];

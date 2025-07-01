@@ -1,0 +1,24 @@
+.text--highlited {
+  background-color: var(--color-gray-15);
+  color: var(--color-white);
+  border-radius: var(--border-radius-s);
+  padding: 12px 14px;
+
+  @include laptop {
+    border-radius: var(--border-radius-xs);
+    padding: 10px 10px;
+  }
+
+  &-inline {
+    @include laptop {
+      padding-inline: 8px;
+    }
+
+    @include mobile {
+      text-transform: lowercase;
+      padding: 0;
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+}
