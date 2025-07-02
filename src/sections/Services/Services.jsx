@@ -1,7 +1,7 @@
 import Section from "@/layouts/Section";
 import "./Services.scss";
 import { services } from "@/constants";
-import ServiceCard from "@/components/ServiceCard";
+import IconCard from "@/components/IconCard";
 
 const Services = () => {
   return (
@@ -14,7 +14,13 @@ const Services = () => {
       <ul className="services__list">
         {services.map((service) => (
           <li className="services__item" key={`service-${service.title}`}>
-            <ServiceCard {...service} />
+            <IconCard
+              {...service}
+              iconMode="green-right"
+              hasDescription
+              hasButton
+              buttonLabel="Learn More"
+            />
           </li>
         ))}
       </ul>

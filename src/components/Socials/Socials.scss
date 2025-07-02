@@ -32,6 +32,10 @@
     width: 64px;
     height: 64px;
 
+    @include hover {
+      border: var(--border-accent);
+    }
+
     @include laptop {
       width: 52px;
       height: 52px;

@@ -8,6 +8,10 @@ import phone from "./phone.svg";
 import design from "./design.svg";
 import engineering from "./engineering.svg";
 import management from "./management.svg";
+import approach from "./approach.svg";
+import expertise from "./expertise.svg";
+import partnership from "./partnership.svg";
+import results from "./results.svg";
 
 export {
   arrowTopRight,
@@ -20,4 +24,8 @@ export {
   design,
   engineering,
   management,
+  approach,
+  expertise,
+  partnership,
+  results,
 };
