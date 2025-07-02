@@ -1,0 +1,26 @@
+.section {
+  &__header {
+    padding-block: clamp(50px, 32.157px + 4.575vw, 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(28px, 22.392px + 1.438vw, 50px);
+
+    &--bg-services {
+      background: url("/section-bg/services.png") 0 / cover no-repeat;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(6px, 3.961px + 0.523vw, 14px);
+  }
+
+  &__description {
+    font-size: clamp(14px, 12.98px + 0.261vw, 18px);
+  }
+}

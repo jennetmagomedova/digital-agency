@@ -10,6 +10,10 @@
   &__inner {
     display: flex;
     flex-direction: column;
+
+    &.container {
+      border-inline: none;
+    }
   }
 
   &__body,

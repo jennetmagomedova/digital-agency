@@ -1,0 +1,51 @@
+.service-card {
+  padding: clamp(30px, 24.902px + 1.307vw, 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+
+    @include laptop {
+      gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+
+  &__icon {
+    width: clamp(58px, 50.353px + 1.961vw, 88px);
+    height: clamp(58px, 50.353px + 1.961vw, 88px);
+  }
+
+  &__description {
+    margin-block: 20px 80px;
+
+    @include laptop {
+      margin-block: 14px 60px;
+    }
+
+    @include mobile {
+      margin-block: 24px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding-block: 18px;
+    margin-top: auto;
+
+    @include laptop {
+      padding-block: 14px;
+    }
+  }
+}

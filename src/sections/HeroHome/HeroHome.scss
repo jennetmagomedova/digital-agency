@@ -76,6 +76,12 @@
     background: rgba(36, 36, 36, 0.2);
     margin-top: -31px;
 
+    &.container {
+      @include tablet {
+        border-inline: none;
+      }
+    }
+
     @include laptop {
       margin-top: -21px;
     }

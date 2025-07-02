@@ -2,6 +2,7 @@
   width: calc(100% - var(--container-margin-x) * 2);
   max-width: var(--container-width);
   margin-inline: auto;
+  border-inline: var(--border-gray-15);
 }
 
 .visually-hidden {
