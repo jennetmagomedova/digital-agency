@@ -1,43 +1,13 @@
 .choice {
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .icon-card__title {
+    font-size: 26px;
 
-    @include mobile {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
-  &__item {
-    width: 100%;
-    height: 100%;
-
-    &:nth-child(2n-1) {
-      border-right: var(--border-gray-15);
+    @include laptop {
+      font-size: 20px;
     }
 
-    &:not(:nth-last-child(-n + 2)) {
-      border-bottom: var(--border-gray-15);
-    }
-
-    @include mobile {
-      border-right: none;
-
-      &:not(:last-child) {
-        border-bottom: var(--border-gray-15);
-      }
-    }
-
-    .icon-card__title {
-      font-size: 26px;
-
-      @include laptop {
-        font-size: 20px;
-      }
-
-      @include mobile-above {
-        font-weight: 500;
-      }
+    @include mobile-above {
+      font-weight: 500;
     }
   }
 }

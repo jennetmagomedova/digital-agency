@@ -137,3 +137,69 @@ export const choiceReasons = [
       "We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.",
   },
 ];
+
+export const reviews = [
+  {
+    title: "SquareUp has been Instrumental in Transforming our Online Presence",
+    text: "Their team's expertise in web development and design resulted in a visually stunning and user-friendly e-commerce platform. Our online sales have skyrocketed, and we couldn't be happier.",
+    author: {
+      imgSrc: "1",
+      name: "John Smith",
+      ocupation: "CEO of Chic Boutique",
+      href: "#",
+    },
+  },
+  {
+    title: "Working with SquareUp was a breeze",
+    text: "They understood our vision for a mobile app that streamlined our food delivery service. The app they delivered exceeded our expectations, and our customers love the seamless ordering experience. SquareUp is a trusted partner we highly recommend.",
+    author: {
+      imgSrc: "2",
+      name: "Sarah Johnson",
+      ocupation: "Founder of HungryBites",
+      href: "#",
+    },
+  },
+  {
+    title:
+      "SquareUp developed a comprehensive booking and reservation system for our event management company",
+    text: "Their attention to detail and commitment to delivering a user-friendly platform was evident throughout the project. The system has streamlined our operations and enhanced our clients' event experiences.",
+    author: {
+      imgSrc: "3",
+      name: "Mark Thompson",
+      ocupation: "CEO of EventMasters",
+      href: "#",
+    },
+  },
+  {
+    title: "ProTech Solutions turned to SquareUp to automate our workflow",
+    text: "They delivered an exceptional custom software solution. The system has significantly increased our productivity and reduced manual errors. SquareUp's expertise and professionalism have made them a trusted technology partner.",
+    author: {
+      imgSrc: "4",
+      name: "Laura Adams",
+      ocupation: "CEO of ProTech Solutions",
+      href: "#",
+    },
+  },
+  {
+    title:
+      "SquareUp designed and developed a captivating web portal for showcasing our real estate listings",
+    text: "The platform is visually appealing and easy to navigate, allowing potential buyers to find their dream homes effortlessly. SquareUp's expertise in the real estate industry is unmatched.",
+    author: {
+      imgSrc: "5",
+      name: "Michael Anderson",
+      ocupation: "Founder of Dream Homes Realty",
+      href: "#",
+    },
+  },
+  {
+    title:
+      "FitLife Tracker wanted a mobile app that tracked fitness activities and provided personalized workout plans",
+    text: "SquareUp's team developed an intuitive and feature-rich app that has helped our users stay motivated and achieve their fitness goals. We highly recommend SquareUp for any health and fitness app development needs.",
+    author: {
+      imgSrc: "6",
+      name: "Emily Turner",
+      ocupation: "CEO of FitLife Tracker",
+      href: "#",
+    },
+  },
+];

@@ -1,18 +1,26 @@
 .section {
   &__header {
     padding-block: clamp(50px, 32.157px + 4.575vw, 120px);
+    padding-inline: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: clamp(28px, 22.392px + 1.438vw, 50px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &--bg-services {
-      background: url("/section-bg/services.png") 0 / cover no-repeat;
+      background-image: url("/section-bg/services.png");
     }
 
     &--bg-choice {
-      background: url("/section-bg/choice.png") 0 / cover no-repeat;
+      background-image: url("/section-bg/choice.png");
+    }
+
+    &--bg-about {
+      background-image: url("/section-bg/about.png");
     }
   }
 
@@ -25,6 +33,9 @@
   }
 
   &__description {
+    max-width: 1000px;
+    margin-inline: auto;
+    text-align: center;
     font-size: clamp(14px, 12.98px + 0.261vw, 18px);
   }
 }

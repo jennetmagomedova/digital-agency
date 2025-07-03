@@ -6,13 +6,17 @@ import IconCard from "@/components/IconCard";
 const Choice = () => {
   return (
     <Section
+      className="choice"
       title="Why Choose SquareUp?"
       description="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
       bg="choice"
     >
-      <ul className="choice__list">
+      <ul className="grid--2cols__list">
         {choiceReasons.map((choiceReason) => (
-          <li className="choice__item" key={`choice--${choiceReason.title}`}>
+          <li
+            className="grid--2cols__item"
+            key={`choice--${choiceReason.title}`}
+          >
             <IconCard
               {...choiceReason}
               hasDescription

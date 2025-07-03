@@ -1,0 +1,28 @@
+.review-card {
+  padding: clamp(40px, 24.706px + 3.922vw, 100px)
+    clamp(24px, 9.725px + 3.66vw, 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__title {
+    font-size: clamp(18px, 15.451px + 0.654vw, 28px);
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-green-80);
+    line-height: 1.5;
+  }
+
+  &__text {
+    margin-block: 24px clamp(24px, 19.922px + 1.046vw, 40px);
+
+    @include laptop {
+      margin-top: 20px;
+    }
+  }
+
+  &__person {
+    margin-top: auto;
+  }
+}
