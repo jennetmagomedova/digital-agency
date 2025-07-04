@@ -1,0 +1,79 @@
+.faq {
+  &__list {
+    padding-block: 80px;
+    column-count: 2;
+    column-gap: 0;
+    column-rule: var(--border-gray-15);
+    counter-reset: custom-counter;
+    list-style: none;
+
+    @include laptop {
+      padding-block: 60px;
+    }
+
+    @include mobile {
+      padding-block: 0;
+      column-count: 1;
+    }
+  }
+
+  &__item {
+    --markerSize: #{clamp(52px, 44.863px + 1.83vw, 80px)};
+
+    position: relative;
+    padding: clamp(24px, 21.451px + 0.654vw, 34px)
+      clamp(24px, 17.373px + 1.699vw, 50px);
+    display: flex;
+    column-gap: clamp(20px, 16.431px + 0.915vw, 34px);
+    counter-increment: custom-counter;
+    border-top: var(--border-gray-15);
+
+    &::before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: counter(custom-counter, decimal-leading-zero);
+      font-size: clamp(20px, 17.961px + 0.523vw, 28px);
+      font-weight: 600;
+      color: inherit;
+      width: var(--markerSize);
+      height: var(--markerSize);
+      background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+      border: var(--border-gray-15);
+      border-radius: var(--border-radius-l);
+
+      @include laptop {
+        border-radius: var(--border-radius-s);
+      }
+
+      @include mobile {
+        border-radius: var(--border-radius-xs);
+      }
+    }
+
+    &:not(:last-child) {
+      break-inside: avoid;
+      break-inside: avoid-column;
+    }
+
+    &:first-child {
+      @include mobile {
+        border-top: none;
+      }
+    }
+
+    &:has(.accordion__details[open]) {
+      &::before {
+        color: var(--color-green-50);
+      }
+    }
+
+    &--border-bottom {
+      border-bottom: var(--border-gray-15);
+
+      @include mobile {
+        border-bottom: none;
+      }
+    }
+  }
+}
