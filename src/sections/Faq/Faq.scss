@@ -11,7 +11,7 @@
       padding-block: 60px;
     }
 
-    @include mobile {
+    @include tablet {
       padding-block: 0;
       column-count: 1;
     }
@@ -57,7 +57,7 @@
     }
 
     &:first-child {
-      @include mobile {
+      @include tablet {
         border-top: none;
       }
     }
@@ -71,7 +71,7 @@
     &--border-bottom {
       border-bottom: var(--border-gray-15);
 
-      @include mobile {
+      @include tablet {
         border-bottom: none;
       }
     }

@@ -1,5 +1,6 @@
 import useTitle from "@/hooks/useTitle";
 import Choice from "@/sections/Choice";
+import Contacs from "@/sections/Contacts/Contacts";
 import Faq from "@/sections/Faq";
 import HeroHome from "@/sections/HeroHome";
 import Reviews from "@/sections/Reviews";
@@ -14,6 +15,7 @@ const Home = () => {
       <Choice />
       <Reviews />
       <Faq />
+      <Contacs />
     </>
   );
 };

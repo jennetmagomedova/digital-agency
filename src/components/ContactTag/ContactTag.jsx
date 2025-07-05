@@ -1,4 +1,4 @@
-import "./Contact.scss";
+import "./ContactTag.scss";
 
 const Contact = (props) => {
   const { icon, label, /** email, phone, address */ type = "email" } = props;

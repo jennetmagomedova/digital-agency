@@ -2,7 +2,7 @@ import Logo from "@/components/Logo";
 import "./Footer.scss";
 import { contacts, menuItems, socialLinks } from "@/constants";
 import Socials from "@/components/Socials";
-import Contact from "@/components/Contact";
+import Contact from "@/components/ContactTag";
 
 const Footer = () => {
   return (

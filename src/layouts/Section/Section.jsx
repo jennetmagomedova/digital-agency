@@ -8,8 +8,8 @@ const Section = (props) => {
     bg,
     title,
     description,
-    isLogo,
-    isButton,
+    hasLogo,
+    hasButton,
     buttonProps,
     children,
   } = props;
@@ -19,7 +19,7 @@ const Section = (props) => {
       <header
         className={classNames("section__header", `section__header--bg-${bg}`)}
       >
-        {isLogo && (
+        {hasLogo && (
           <img
             className="section__logo"
             alt=""
@@ -38,7 +38,7 @@ const Section = (props) => {
           </div>
         </div>
 
-        {isButton && <Button {...buttonProps} />}
+        {hasButton && <Button className="section__button" {...buttonProps} />}
       </header>
       <div className={classNames("section__body", className)}>{children}</div>
     </section>

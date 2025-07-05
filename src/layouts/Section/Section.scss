@@ -26,6 +26,10 @@
     &--bg-faq {
       background-image: url("/section-bg/faq.png");
     }
+
+    &--bg-contact {
+      background-image: url("/section-bg/contact.png");
+    }
   }
 
   &__info {
@@ -41,5 +45,13 @@
     margin-inline: auto;
     text-align: center;
     font-size: clamp(14px, 12.98px + 0.261vw, 18px);
+  }
+
+  &__button {
+    padding: 18px 34px;
+
+    @include laptop {
+      padding: 14px 24px;
+    }
   }
 }
