@@ -1,0 +1,27 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: clamp(20px, 14.902px + 1.307vw, 40px);
+  width: 100vw;
+  height: 100vh;
+  padding: 16px;
+
+  &__title {
+    font-weight: 700;
+    font-size: clamp(52px, 34.667px + 4.444vw, 120px);
+  }
+
+  &__description {
+    font-size: clamp(28px, 22.902px + 1.307vw, 48px);
+  }
+
+  &__button {
+    padding: 18px 34px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

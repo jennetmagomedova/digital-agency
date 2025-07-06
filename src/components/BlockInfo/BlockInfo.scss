@@ -1,12 +1,10 @@
-.allservices {
-  &__info {
-    padding: clamp(40px, 19.608px + 5.229vw, 120px)
-      clamp(16px, 7.333px + 2.222vw, 50px) 50px;
-    border-bottom: var(--border-gray-15);
+.block-info {
+  padding: clamp(40px, 19.608px + 5.229vw, 120px)
+    clamp(16px, 7.333px + 2.222vw, 50px) 50px;
+  border-bottom: var(--border-gray-15);
 
-    @include laptop {
-      padding-bottom: 40px;
-    }
+  @include laptop {
+    padding-bottom: 40px;
   }
 
   &__title {

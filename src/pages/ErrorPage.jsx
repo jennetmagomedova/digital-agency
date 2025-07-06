@@ -1,8 +1,13 @@
+import Error404 from "@/sections/Error404";
 import useTitle from "../hooks/useTitle";
 
 const ErrorPage = () => {
   useTitle("Error");
-  return <div>ErrorPage</div>;
+  return (
+    <>
+      <Error404 />
+    </>
+  );
 };
 
 export default ErrorPage;
