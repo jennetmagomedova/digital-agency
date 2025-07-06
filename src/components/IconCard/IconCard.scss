@@ -88,4 +88,27 @@
       }
     }
   }
+
+  &--tight {
+    padding: clamp(20px, 12.353px + 1.961vw, 50px);
+
+    @include mobile {
+      & .icon-card__header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+      }
+    }
+
+    & .icon-card__title {
+      font-weight: 500;
+      color: var(--color-grey-90);
+      font-size: 20px;
+      line-height: 1.5;
+
+      @include laptop {
+        font-size: 16px;
+      }
+    }
+  }
 }

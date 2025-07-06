@@ -1,0 +1,25 @@
+.allservices {
+  &__info {
+    padding: clamp(40px, 19.608px + 5.229vw, 120px)
+      clamp(16px, 7.333px + 2.222vw, 50px) 50px;
+    border-bottom: var(--border-gray-15);
+
+    @include laptop {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    text-align: left;
+  }
+
+  &__description {
+    margin-top: clamp(6px, 3.961px + 0.523vw, 14px);
+  }
+
+  &__highlight {
+    margin-top: clamp(30px, 24.902px + 1.307vw, 50px);
+    font-size: clamp(16px, 14.471px + 0.392vw, 22px);
+  }
+}

@@ -2,16 +2,20 @@ import classNames from "classnames";
 import "./TextHighlight.scss";
 
 const TextHighlight = (props) => {
-  const { label, isInline } = props;
-  const Component = isInline ? "span" : "div";
+  const { className, label, isInline } = props;
+
   return (
-    <Component
-      className={classNames("text--highlited", {
-        ["text--highlited-inline"]: isInline,
-      })}
+    <span
+      className={classNames(
+        "text--highlited",
+        {
+          ["text--highlited-inline"]: isInline,
+        },
+        className
+      )}
     >
       {label}
-    </Component>
+    </span>
   );
 };
 

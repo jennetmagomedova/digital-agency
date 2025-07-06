@@ -7,13 +7,22 @@ const Section = (props) => {
     className,
     bg,
     title,
+    isMainHeader,
     description,
     hasLogo,
     hasButton,
-    buttonProps,
     children,
   } = props;
+
   const titleId = `${title}-title`;
+  const Component = isMainHeader ? "h1" : "h2";
+  const buttonProps = {
+    href: "/contacts",
+    mode: "accent",
+    hasLabel: true,
+    label: "Start Project",
+    borderRadius: 8,
+  };
   return (
     <section className="section container" aria-labelledby={titleId}>
       <header
@@ -30,9 +39,12 @@ const Section = (props) => {
           />
         )}
         <div className="section__info">
-          <h2 className="section__title" id={titleId}>
+          <Component
+            className={classNames("section__title", { ["h2"]: isMainHeader })}
+            id={titleId}
+          >
             {title}
-          </h2>
+          </Component>
           <div className="section__description">
             <p>{description}</p>
           </div>
@@ -40,7 +52,9 @@ const Section = (props) => {
 
         {hasButton && <Button className="section__button" {...buttonProps} />}
       </header>
-      <div className={classNames("section__body", className)}>{children}</div>
+      {children && (
+        <div className={classNames("section__body", className)}>{children}</div>
+      )}
     </section>
   );
 };

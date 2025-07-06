@@ -20,6 +20,14 @@
         rgba(158, 255, 0, 0.2) -66.81%,
         rgba(158, 255, 0, 0) 37.19%
       );
+      border: none;
+      border-style: solid;
+      border-width: 1px;
+      border-image: linear-gradient(
+        180deg,
+        #2e2e2e 0%,
+        rgba(46, 46, 46, 0) 100%
+      );
     }
 
     &-green-right {

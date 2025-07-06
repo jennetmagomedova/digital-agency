@@ -14,6 +14,7 @@ const IconCard = (props) => {
     hasButton,
     buttonLabel,
     isWide,
+    isTight,
   } = props;
 
   return (
@@ -21,6 +22,7 @@ const IconCard = (props) => {
       className={classNames(
         "icon-card",
         { ["icon-card--wide"]: isWide },
+        { ["icon-card--tight"]: isTight },
         className
       )}
     >
