@@ -42,7 +42,6 @@ const Header = () => {
             <Button
               className="header__button"
               href="/contact"
-              target="_blank"
               mode="accent"
               borderRadius={8}
               hasLabel

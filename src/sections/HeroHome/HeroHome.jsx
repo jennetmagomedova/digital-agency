@@ -30,7 +30,6 @@ const HeroHome = () => {
               hasLabel
               label="Our Works"
               borderRadius={8}
-              target="_blank"
             />
             <Button
               className="hero__actions-button"
@@ -39,7 +38,6 @@ const HeroHome = () => {
               hasLabel
               label="Contact Us"
               borderRadius={8}
-              target="_blank"
             />
           </div>
         </div>

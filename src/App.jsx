@@ -4,6 +4,7 @@ import AppLayout from "./layouts/AppLayout";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Services from "./pages/Services";
+import Work from "./pages/Work";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/work",
+        element: <Work />,
       },
     ],
   },
