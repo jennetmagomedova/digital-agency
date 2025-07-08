@@ -1,0 +1,47 @@
+.text-card {
+  padding: clamp(40px, 24.706px + 3.922vw, 100px)
+    clamp(24px, 17.373px + 1.699vw, 50px);
+
+  &__title {
+    padding-left: 10px;
+    padding-bottom: clamp(14px, 10.941px + 0.784vw, 26px);
+    width: 100%;
+    border-bottom: var(--border-gray-15);
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-gray-60);
+    font-size: clamp(20px, 17.451px + 0.654vw, 30px);
+  }
+
+  &__description {
+    margin-top: clamp(30px, 24.902px + 1.307vw, 50px);
+    font-size: clamp(14px, 12.98px + 0.261vw, 18px);
+    color: var(--color-gray-60);
+    line-height: 1.5;
+  }
+
+  &--numbered {
+    & .text-card__header {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      gap: 14px;
+      counter-increment: custom-counter;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      &::before {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        content: counter(custom-counter, decimal-leading-zero);
+        font-size: clamp(80px, 62.157px + 4.575vw, 150px);
+        font-weight: 600;
+        color: var(--color-green-80);
+        line-height: 0.8;
+      }
+    }
+  }
+}

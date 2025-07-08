@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Services from "./pages/Services";
 import Work from "./pages/Work";
+import Process from "./pages/Process";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/work",
         element: <Work />,
+      },
+      {
+        path: "/process",
+        element: <Process />,
       },
     ],
   },

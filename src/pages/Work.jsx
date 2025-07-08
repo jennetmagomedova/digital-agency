@@ -1,4 +1,5 @@
 import useTitle from "@/hooks/useTitle";
+import Ideas from "@/sections/Ideas";
 import Works from "@/sections/Works";
 
 const Work = () => {
@@ -6,6 +7,7 @@ const Work = () => {
   return (
     <>
       <Works />
+      <Ideas />
     </>
   );
 };

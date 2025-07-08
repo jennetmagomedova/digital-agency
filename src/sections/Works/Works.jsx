@@ -1,5 +1,4 @@
 import Section from "@/layouts/Section";
-import "./Works.scss";
 import BlockInfo from "@/components/BlockInfo";
 import { works } from "@/constants/works";
 import WorkCard from "@/components/WorkCard";
