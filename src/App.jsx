@@ -6,6 +6,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Services from "./pages/Services";
 import Work from "./pages/Work";
 import Process from "./pages/Process";
+import About from "./pages/About";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/process",
         element: <Process />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },

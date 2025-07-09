@@ -44,4 +44,10 @@
       }
     }
   }
+
+  &--accent {
+    & .text-card__title {
+      color: var(--color-green-80);
+    }
+  }
 }

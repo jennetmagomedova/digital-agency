@@ -2,7 +2,7 @@ import TextCard from "../TextCard";
 import "./OrderedCardsList.scss";
 
 const OrderedCardsList = (props) => {
-  const { items } = props;
+  const { items, isHeaderAccent } = props;
   return (
     <ol className="ordered-list grid--2cols__list">
       {items.map(({ title, description }, index) => (
@@ -10,7 +10,12 @@ const OrderedCardsList = (props) => {
           className="ordered-list__item grid--2cols__item"
           key={`${title}-${index}`}
         >
-          <TextCard title={title} description={description} hasNumber />
+          <TextCard
+            className={isHeaderAccent ? "text-card--accent" : ""}
+            title={title}
+            description={description}
+            hasNumber
+          />
         </li>
       ))}
     </ol>

@@ -1,0 +1,19 @@
+.story {
+  &__header {
+    border-block: var(--border-gray-15);
+    padding: 100px 50px;
+
+    @include laptop {
+      padding-block: 80px;
+    }
+
+    @include mobile {
+      padding: 40px 24px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-size: clamp(38px, 32.902px + 1.307vw, 58px);
+  }
+}

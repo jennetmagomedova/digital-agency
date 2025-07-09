@@ -1,0 +1,104 @@
+.start-project {
+  padding: 80px;
+  border-top: var(--border-gray-15);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, 24.902px + 1.307vw, 50px);
+
+  @include laptop {
+    padding: 60px;
+  }
+
+  @include mobile {
+    padding: 40px 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @include laptop {
+      gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__image {
+    width: clamp(80px, 62.157px + 4.575vw, 150px);
+    height: clamp(80px, 62.157px + 4.575vw, 150px);
+  }
+
+  &__title {
+    text-align: left;
+    color: var(--color-gray-60);
+    font-size: clamp(20px, 17.451px + 0.654vw, 30px);
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-top: clamp(10px, 7.451px + 0.654vw, 20px);
+    color: var(--color-gray-60);
+  }
+
+  &__body {
+    background: rgba(36, 36, 36, 0.2);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    padding: 24px clamp(20px, 14.902px + 1.307vw, 40px);
+    border-radius: var(--border-radius-l);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include laptop {
+      padding-block: 20px;
+      border-radius: var(--border-radius-m);
+      gap: 14px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__highlight {
+    font-size: 20px;
+    padding: 14px 20px;
+
+    @include laptop {
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+    @include tablet-above {
+      margin-right: auto;
+    }
+  }
+
+  &__button {
+    padding: 18px 34px;
+    flex-shrink: 0;
+
+    @include laptop {
+      padding: 14px 20px;
+    }
+
+    @include tablet {
+      margin-top: 6px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.about-us {
+  padding: clamp(40px, 24.706px + 3.922vw, 100px)
+    clamp(16px, -18.157px + 8.758vw, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: clamp(28px, 22.902px + 1.307vw, 48px);
+  }
+
+  &__description {
+    margin-top: 20px;
+    letter-spacing: -0.6%;
+    font-size: clamp(14px, 12.471px + 0.392vw, 20px);
+
+    @include laptop {
+      margin-top: 16px;
+    }
+  }
+
+  &__image {
+    width: clamp(358px, 296.824px + 15.686vw, 598px);
+    height: clamp(337px, 277.353px + 15.294vw, 571px);
+    max-width: 100%;
+
+    border-radius: 16px;
+
+    @include mobile {
+      border-radius: var(--border-radius-l);
+    }
+  }
+}
