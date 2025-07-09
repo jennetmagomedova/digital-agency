@@ -1,6 +1,6 @@
 import Section from "@/layouts/Section";
 import { allServices } from "@/constants/allServices";
-import CardGroup from "@/components/CardsGroup/CardsGroup";
+import CardsGroup from "@/components/CardsGroup/CardsGroup";
 import BlockInfo from "@/components/BlockInfo";
 
 const AllServices = () => {
@@ -21,7 +21,7 @@ const AllServices = () => {
                   className="allservices__block-item"
                   key={`servicesBlock--${index}`}
                 >
-                  <CardGroup title={block.title} cards={block.cards} />
+                  <CardsGroup title={block.title} cards={block.cards} />
                 </li>
               ))}
             </ul>

@@ -2,13 +2,14 @@ import classNames from "classnames";
 import "./TextCard.scss";
 
 const TextCard = (props) => {
-  const { className, title, description, hasNumber } = props;
+  const { className, title, description, hasNumber, isHeaderAccent } = props;
   return (
     <div
       className={classNames(
         "text-card",
         {
           ["text-card--numbered"]: hasNumber,
+          ["text-card--accent"]: isHeaderAccent,
         },
         className
       )}

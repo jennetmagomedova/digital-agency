@@ -9,7 +9,6 @@ const IconCard = (props) => {
     icon,
     iconMode,
     title,
-    hasDescription,
     description,
     hasButton,
     buttonLabel,
@@ -36,7 +35,7 @@ const IconCard = (props) => {
         />
         <h3 className="icon-card__title">{title}</h3>
       </header>
-      {hasDescription && (
+      {description && (
         <div className="icon-card__description">
           <p>{description}</p>
         </div>

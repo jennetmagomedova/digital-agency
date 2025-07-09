@@ -48,6 +48,8 @@ import testPlanning from "./testPlanning.svg";
 import ui from "./ui.svg";
 import updates from "./updates.svg";
 import userResearch from "./userResearch.svg";
+import designHead from "./designHead.svg";
+import hr from "./hr.svg";
 
 export {
   arrowTopRight,
@@ -100,4 +102,6 @@ export {
   ui,
   updates,
   userResearch,
+  designHead,
+  hr,
 };

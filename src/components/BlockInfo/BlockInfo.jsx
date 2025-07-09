@@ -9,9 +9,11 @@ const BlockInfo = (props) => {
     <div className="block-info">
       <h2 className="block-info__title">{title}</h2>
       <div className="block-info__description">{description}</div>
-      <div className="block-info__highlight">
-        <TextHighlight label={tag} />
-      </div>
+      {tag && (
+        <div className="block-info__highlight">
+          <TextHighlight label={tag} />
+        </div>
+      )}
     </div>
   );
 };

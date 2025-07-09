@@ -4,7 +4,7 @@
 
   &__title {
     padding-left: 10px;
-    padding-bottom: clamp(14px, 10.941px + 0.784vw, 26px);
+    padding-bottom: clamp(20px, 12.353px + 1.961vw, 50px);
     width: 100%;
     border-bottom: var(--border-gray-15);
     text-align: left;
@@ -42,6 +42,10 @@
         color: var(--color-green-80);
         line-height: 0.8;
       }
+    }
+
+    & .text-card__title {
+      padding-bottom: clamp(14px, 10.941px + 0.784vw, 26px);
     }
   }
 

@@ -1,16 +1,22 @@
 import IconCard from "../IconCard";
 import "./CardsGroup.scss";
 
-const CardGroup = (props) => {
-  const { title, cards } = props;
+const CardsGroup = (props) => {
+  const {
+    title,
+    cards,
+    columns = 4,
+    iconMode = "green-left",
+    isTight = true,
+  } = props;
 
   return (
     <div className="cards-group">
       <h3 className="cards-group__title">{title}</h3>
-      <ul className="grid--4cols__list">
+      <ul className={`grid--${columns}cols__list`}>
         {cards.map((card, index) => (
-          <li className="grid--4cols__item" key={`card--${index}`}>
-            <IconCard {...card} iconMode="green-left" isTight />
+          <li className={`grid--${columns}cols__item`} key={`card--${index}`}>
+            <IconCard {...card} iconMode={iconMode} isTight={isTight} />
           </li>
         ))}
       </ul>
@@ -18,4 +24,4 @@ const CardGroup = (props) => {
   );
 };
 
-export default CardGroup;
+export default CardsGroup;
