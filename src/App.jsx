@@ -44,12 +44,17 @@ const router = createBrowserRouter([
         path: "/contacts",
         element: <Contact />,
       },
+      {},
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router}> </RouterProvider>;
+  return (
+    <RouterProvider router={router} basename={"/digital-agency"}>
+      {" "}
+    </RouterProvider>
+  );
 }
 
 export default App;
