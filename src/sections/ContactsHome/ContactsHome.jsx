@@ -2,7 +2,7 @@ import Section from "@/layouts/Section";
 
 import ContactForm from "@/components/ContactForm";
 
-const Contacs = () => {
+const ContacsHome = () => {
   return (
     <Section
       title="Thank you for your Interest in SquareUp."
@@ -16,4 +16,4 @@ const Contacs = () => {
   );
 };
 
-export default Contacs;
+export default ContacsHome;

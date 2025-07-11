@@ -8,6 +8,7 @@ import Work from "./pages/Work";
 import Process from "./pages/Process";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/careers",
         element: <Careers />,
+      },
+      {
+        path: "/contacts",
+        element: <Contact />,
       },
     ],
   },

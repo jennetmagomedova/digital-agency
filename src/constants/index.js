@@ -41,7 +41,7 @@ export const menuItems = [
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "/contacts",
   },
 ];
 

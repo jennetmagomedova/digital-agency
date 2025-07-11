@@ -24,15 +24,15 @@ const Footer = () => {
               ))}
             </ul>
           </nav>
-          <div className="footer__soc1als">
-            <Socials
-              title="Stay Connected"
-              socialList={socialLinks}
-              size={24}
-              mode="gray"
-              borderRadius={8}
-            />
-          </div>
+
+          <Socials
+            className="footer__soc1als"
+            title="Stay Connected"
+            socialList={socialLinks}
+            size={24}
+            mode="gray"
+            borderRadius={8}
+          />
         </div>
         <div className="footer__extra">
           <div className="footer__contacts">

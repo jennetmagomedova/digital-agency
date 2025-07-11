@@ -13,6 +13,10 @@
     row-gap: 30px;
   }
 
+  @include tablet {
+    border-inline: none;
+  }
+
   &__row {
     width: 100%;
     display: flex;

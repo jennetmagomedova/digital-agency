@@ -6,6 +6,7 @@
     column-rule: var(--border-gray-15);
     counter-reset: custom-counter;
     list-style: none;
+    border-bottom: var(--border-gray-15);
 
     @include laptop {
       padding-block: 60px;

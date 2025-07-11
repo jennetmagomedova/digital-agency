@@ -1,6 +1,6 @@
 import useTitle from "@/hooks/useTitle";
 import Choice from "@/sections/Choice";
-import Contacs from "@/sections/Contacts/Contacts";
+import Contacs from "@/sections/ContactsHome/ContactsHome";
 import Faq from "@/sections/Faq";
 import HeroHome from "@/sections/HeroHome";
 import Reviews from "@/sections/Reviews";

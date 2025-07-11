@@ -41,7 +41,7 @@ const Header = () => {
           <div className="header__actions">
             <Button
               className="header__button"
-              href="/contact"
+              href="/contacts"
               mode="accent"
               borderRadius={8}
               hasLabel

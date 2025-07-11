@@ -1,5 +1,5 @@
 import useTitle from "@/hooks/useTitle";
-import Contacs from "@/sections/Contacts/Contacts";
+import Contacs from "@/sections/ContactsHome/ContactsHome";
 import ProcessSection from "@/sections/Process";
 
 const Process = () => {
