@@ -67,7 +67,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
- */function H7(i){return z.createElement(Xd,{flushSync:A7.flushSync,...i})}const Zs=()=>m.jsx("a",{href:"/",className:"logo",title:"Home","aria-label":"Home",children:m.jsx("img",{src:"/logo/logo.svg",alt:"",className:"logo__image",width:178,height:60})});var Nr={exports:{}};/*!
+ */function H7(i){return z.createElement(Xd,{flushSync:A7.flushSync,...i})}const Zs=()=>m.jsx("a",{href:"/",className:"logo",title:"Home","aria-label":"Home",children:m.jsx("img",{src:"/digital-agency/logo.svg",alt:"",className:"logo__image",width:178,height:60})});var Nr={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
 	http://jedwatson.github.io/classnames
