@@ -27,7 +27,9 @@ const Header = () => {
               {menuItems.slice(0, menuItems.length - 1).map((item) => (
                 <li
                   className={classNames("header__menu-item", {
-                    ["is-active"]: item.href === location.pathname,
+                    ["is-active"]:
+                      item.href ==
+                      `${import.meta.env.BASE_URL}${location.pathname}`,
                   })}
                   key={`header--menuItem-${item.label}`}
                 >
@@ -41,7 +43,7 @@ const Header = () => {
           <div className="header__actions">
             <Button
               className="header__button"
-              href="/contacts"
+              href={`${import.meta.env.BASE_URL}/contacts`}
               mode="accent"
               borderRadius={8}
               hasLabel

@@ -10,51 +10,49 @@ import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/work",
-        element: <Work />,
-      },
-      {
-        path: "/process",
-        element: <Process />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/careers",
-        element: <Careers />,
-      },
-      {
-        path: "/contacts",
-        element: <Contact />,
-      },
-      {},
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/work",
+          element: <Work />,
+        },
+        {
+          path: "/process",
+          element: <Process />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/careers",
+          element: <Careers />,
+        },
+        {
+          path: "/contacts",
+          element: <Contact />,
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 function App() {
-  return (
-    <RouterProvider router={router} basename={"/digital-agency"}>
-      {" "}
-    </RouterProvider>
-  );
+  return <RouterProvider router={router}> </RouterProvider>;
 }
 
 export default App;

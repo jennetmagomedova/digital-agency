@@ -17,31 +17,31 @@ import {
 export const menuItems = [
   {
     label: "Home",
-    href: "/",
+    href: `${import.meta.env.BASE_URL}/`,
   },
   {
     label: "Services",
-    href: "/services",
+    href: `${import.meta.env.BASE_URL}/services`,
   },
   {
     label: "Work",
-    href: "/work",
+    href: `${import.meta.env.BASE_URL}/work`,
   },
   {
     label: "Process",
-    href: "/process",
+    href: `${import.meta.env.BASE_URL}/process`,
   },
   {
     label: "About",
-    href: "/about",
+    href: `${import.meta.env.BASE_URL}/about`,
   },
   {
     label: "Careers",
-    href: "/careers",
+    href: `${import.meta.env.BASE_URL}/careers`,
   },
   {
     label: "Contact",
-    href: "/contacts",
+    href: `${import.meta.env.BASE_URL}/contacts`,
   },
 ];
 
@@ -49,17 +49,17 @@ export const socialLinks = [
   {
     title: "facebook",
     icon: facebook,
-    href: "/",
+    href: `${import.meta.env.BASE_URL}/`,
   },
   {
     title: "twitter",
     icon: twitter,
-    href: "/",
+    href: `${import.meta.env.BASE_URL}/`,
   },
   {
     title: "instagram",
     icon: instagram,
-    href: "/",
+    href: `${import.meta.env.BASE_URL}/`,
   },
 ];
 

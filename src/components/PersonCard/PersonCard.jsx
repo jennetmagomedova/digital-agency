@@ -9,7 +9,7 @@ const PersonCard = (props) => {
     <div className={classNames(className, "person-card")}>
       <div className="person-card__image-wrapper">
         <img
-          src={`/src/assets/images/reviews/${imgSrc}.png`}
+          src={`${import.meta.env.BASE_URL}/reviews/${imgSrc}.png`}
           alt=""
           className="person-card__image"
           width={60}

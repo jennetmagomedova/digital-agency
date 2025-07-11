@@ -25,7 +25,7 @@ const AboutUs = () => {
           </div>
         </div>
         <img
-          src="/about/about.png"
+          src={`${import.meta.env.BASE_URL}/about/about.png`}
           alt=""
           className="about-us__image"
           width={598}

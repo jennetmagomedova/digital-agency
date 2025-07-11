@@ -25,7 +25,7 @@ const HeroHome = () => {
           <div className="hero__actions">
             <Button
               className="hero__actions-button"
-              href="/works"
+              href={`${import.meta.env.BASE_URL}/work`}
               mode="transparent"
               hasLabel
               label="Our Works"
@@ -33,7 +33,7 @@ const HeroHome = () => {
             />
             <Button
               className="hero__actions-button"
-              href="/contacts"
+              href={`${import.meta.env.BASE_URL}/contacts`}
               mode="accent"
               hasLabel
               label="Contact Us"
@@ -49,7 +49,7 @@ const HeroHome = () => {
             <li className="hero__companies-item" key={`company-${company}`}>
               <img
                 className="hero__companies-image"
-                src={`/hero-logos/${company}.png`}
+                src={`${import.meta.env.BASE_URL}/hero-logos/${company}.png`}
                 alt=""
                 height={50}
                 loading="lazy"

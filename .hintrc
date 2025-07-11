@@ -11,6 +11,13 @@
           "scrollbar-gutter: stable"
         ]
       }
+    ],
+    "meta-viewport": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
     ]
   }
 }

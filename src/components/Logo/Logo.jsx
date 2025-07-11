@@ -2,9 +2,14 @@ import "./Logo.scss";
 
 const Logo = () => {
   return (
-    <a href="/" className="logo" title="Home" aria-label="Home">
+    <a
+      href={`${import.meta.env.BASE_URL}/`}
+      className="logo"
+      title="Home"
+      aria-label="Home"
+    >
       <img
-        src="/logo.svg"
+        src={`${import.meta.env.BASE_URL}/logo.svg`}
         alt=""
         className="logo__image"
         width={178}

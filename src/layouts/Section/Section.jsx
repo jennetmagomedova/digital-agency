@@ -17,7 +17,7 @@ const Section = (props) => {
   const titleId = `${title}-title`;
   const Component = isMainHeader ? "h1" : "h2";
   const buttonProps = {
-    href: "/contacts",
+    href: `${import.meta.env.BASE_URL}/contacts`,
     mode: "accent",
     hasLabel: true,
     label: "Start Project",
@@ -32,7 +32,7 @@ const Section = (props) => {
           <img
             className="section__logo"
             alt=""
-            src="/logo-icon.svg"
+            src={`${import.meta.env.BASE_URL}/logo-icon.svg`}
             width={80}
             height={80}
             loading="lazy"

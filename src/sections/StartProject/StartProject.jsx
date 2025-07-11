@@ -7,7 +7,7 @@ const StartProject = () => {
     <section className="start-project container">
       <header className="start-project__header">
         <img
-          src="/logo-icon.svg"
+          src={`${import.meta.env.BASE_URL}/logo-icon.svg`}
           alt=""
           className="start-project__image"
           width={150}
@@ -37,7 +37,7 @@ const StartProject = () => {
         />
         <Button
           className="start-project__button"
-          href="/contacts"
+          href={`${import.meta.env.BASE_URL}/contacts`}
           mode="accent"
           hasLabel
           label="Start Project"

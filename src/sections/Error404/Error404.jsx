@@ -8,7 +8,7 @@ const Error404 = () => {
       <div className="error__description">Page not found</div>
       <Button
         className="error__button"
-        href="/"
+        href={`${import.meta.env.BASE_URL}/`}
         mode="accent"
         hasLabel
         label="Home Page"

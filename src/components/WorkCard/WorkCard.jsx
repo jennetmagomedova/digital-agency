@@ -10,7 +10,7 @@ const WorkCard = (props) => {
       <div className="work-card__body">
         <img
           className="work-card__image"
-          src={`/src/assets/images/works/${imgSrc}.jpg`}
+          src={`${import.meta.env.BASE_URL}/works/${imgSrc}.jpg`}
           alt=""
           width={698}
           height={423}
